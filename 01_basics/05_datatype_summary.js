@@ -49,3 +49,31 @@ console.log("hellow world");
 }
 
 console.log(typeof bigNumber);
+
+
+// ****************************************************************
+
+// Stack (primative),Heap  (Non-primative)
+
+let myYoutubename="hiteshchoudhartydotcom"
+
+let anotherName =myYoutubename;
+
+anotherName="chaiautcode"
+
+console.log(anotherName);
+console.log(myYoutubename);
+
+
+let userOne ={
+    email:"usere@google.com",
+    upi:"user@ybl",
+}
+
+let userTwo=userOne;
+
+userTwo.email="hiteshchoudhary@gmail.com"
+
+
+console.log(userOne.email);
+console.log(userTwo.email);
