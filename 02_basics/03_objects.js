@@ -1,13 +1,15 @@
 // singleton 
 // Object.create()
 
+
+// object literals
+
 // create symbol
 
 const mySym=Symbol("key1")
 
 // console.log(typeof mySym);
 
-// object literals
 const JsUser={
     name:"Hitesh",
     "full name":"Hitesh Choudhary",
