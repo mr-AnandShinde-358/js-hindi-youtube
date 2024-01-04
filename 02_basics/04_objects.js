@@ -65,6 +65,53 @@ const users=[
 // console.log(Object.entries(tinderUser));
 
 // check key is present in obj or not
-console.log(tinderUser.hasOwnProperty('isLoggedin'));
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));
+
+
+const course ={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor:instructor} =course
+
+console.log(instructor);
+
+/*
+// destuctoring  react example
+
+ // const navbar =(props.company)=>{
+const navbar =({company})=>{
+
+}
+
+navbar(company="hitesh")
+ */
+
+
+
+/* 
+// json format javascript object noteition
+{
+    "name":"hitesh",
+   " cousername":"js in hindi",
+    "price":"free"
+}
+
+[
+    {
+
+    },
+    {
+
+    },
+    {
+
+    }
+]
+*/
 
 
