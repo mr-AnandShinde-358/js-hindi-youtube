@@ -83,4 +83,12 @@ console.log(addTwo(3,4)); */
 
 // const addTwo =(num1,num2)=>num1+num2;
 
-// const addTwo =(num1,num2)=>num1+num2;
+// when you can write function lick this :  const add=(num1,num2)=>() then you not need write a return keyword
+// when you can write function lick this :  const add=(num1,num2)=>{ return } then you need write a return keyword
+
+// const addTwo =(num1,num2)=>(num1+num2);
+
+// console.log(addTwo(3,4)); 
+
+const addThree =(num1,num2)=>({username:"hitesh"});
+console.log(addThree(4,6));
