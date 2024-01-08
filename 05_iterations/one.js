@@ -1,4 +1,5 @@
 // for loop
+// A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop
 
 for (let i = 0; i <= 10; i++) {
     const element = i;
@@ -25,6 +26,8 @@ for (let index = 0; index < myArray.length; index++) {
 }
 
 // break and continue
+// Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement.
+// When you use continue without a label, it terminates the current iteration of the innermost enclosing while, do-while, or for statement and continues execution of the loop with the next iteration.
 
 // for (let index = 0; index <=20; index++) {
 
