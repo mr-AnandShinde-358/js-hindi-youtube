@@ -24,5 +24,23 @@ for (const key in myObject) {
 const programming=["js","rb","py","java","cpp"];
 
 for (const key in programming) {
-    console.log(key);
+    // console.log(key);
+    // console.log(programming[key]);
 }
+
+/*
+// map not itarable 
+const map = new Map();
+map.set('IN','India')
+map.set('USA','United Stated of America')
+map.set('Fr','France')
+map.set('IN','India')
+
+for (const key in map) {
+   console.log(key);
+} */
+
+/* 
+array / map object var loop lavaych asel tar :- for of loop lavaych
+object / var loop lavaych asel tar for in loop lavaych
+*/
