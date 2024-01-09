@@ -1,3 +1,6 @@
+// The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+// A function to execute for each element in the array. It should return a truthy value to keep the element in the resulting array, and a falsy value otherwise. The function is called with the following arguments:
+
 /* const coding =["js","ruby","java","python","cpp"];
 
 const values = coding.forEach((item)=>{

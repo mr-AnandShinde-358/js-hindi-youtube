@@ -1,3 +1,6 @@
+// The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
+// A function to execute for each element in the array. Its return value is added as a single element in the new array. The function is called with the following arguments:
+
 const myNumers = [1,2,3,4,5,6,7,8,9,10]
 
 // const newNums= myNumers.map((num)=>num+10)
