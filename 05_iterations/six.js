@@ -9,6 +9,13 @@ console.log(values); */
 
 const myNums =[1,2,3,4,5,6,7,8,9,10]
 
+/*
+// this not working with filter this working with map or forEach 
+const val = myNums.filter((num)=>num+10)
+console.log(val) 
+*/;
+
+
 // const newNums = myNums.filter((num)=>num>4)
 
 // when you can ()=>() this not need return keyword
@@ -54,8 +61,8 @@ const books =[
 // const newBooks = books.filter((bk)=>bk.edition==2010)
 // const newBooks=books.filter((bk)=>bk.edition>2000)
 // const newBooks=books.filter((bk)=>bk.publish>=1995)
-const newBooks=books.filter((bk)=>bk.publish>=1995 && bk.genre=='History')
-console.log(newBooks);
+// const newBooks=books.filter((bk)=>bk.publish>=1995 && bk.genre=='History')
+// console.log(newBooks);
 
 // above operation doing using forEach loop 
 /* const newBooks=[]
