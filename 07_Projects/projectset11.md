@@ -71,3 +71,16 @@ form.addEventListener('submit', function (e) {
 
 ```
 
+## project 3
+```javascript
+const clock = document.getElementById('clock');
+// cosnt clock = document.querySelector('#clock');
+
+// The setInterval() method, offered on the Window and WorkerGlobalScope interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
