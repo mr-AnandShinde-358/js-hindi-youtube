@@ -35,21 +35,74 @@
         .out{
             border: 1px solid black;
             height: 100%;
+            width: 100%;
+        
+            
+        }
+        .image{
+            height: 80%;
+            background-color: aquamarine;
+            /* padding: 10px; */
+        }
+        .imageURL{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            
+        }
+        .folorwer{
+            margin-top: 5px;
+            background-color: antiquewhite;
+            height: 18%;
+            color: black;
+            font-size: 2rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            <input type="text" class="input" placeholder="Enter your url">
+            <input type="text" class="input" placeholder="Enter your GIT HUB user name">
             <button class="button">search</button>
             <div class="out">
                 <div class="image">
-                    <img src="" alt="" class="imangeURL">
+                    <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w300/2023/10/free-images.jpg" alt="" class="imageURL">
                 </div>
-                <h2 class="folorwer"></h2>
+                <h2 class="folorwer">Flow:</h2>
             </div>
         </div>
     </div>
 </body>
+<script>
+   const serach =  document.querySelector('.button')
+   let imgage= document.querySelector('.imageURL')
+   let flow = document.querySelector('.folorwer')
+   serach.addEventListener('click',function(e){
+    e.preventDefault();
+    let userName = document.querySelector('.input').value;
+    // console.log(userName)
+    
+
+    const xml= new XMLHttpRequest()
+    xml.open('GET',`https://api.github.com/users/${userName}`)
+    xml.send();
+    xml.onreadystatechange= function(){
+        // console.log(xml.readyState)
+        if(xml.readyState===4){
+        let res= JSON.parse(xml.responseText)
+        let avatar = res.avatar_url;
+        let followers=res.followers
+        // console.log(followers)
+        // console.log(avatar)
+        let url=`${avatar}`
+       imgage.setAttribute('src',url)
+       flow.innerHTML=`Flow: ${followers} `;
+
+    }
+    }
+
+   
+   } )
+</script>
 </html>
