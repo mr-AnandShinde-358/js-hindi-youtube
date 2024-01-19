@@ -1,0 +1,4 @@
+A fetch() promise only rejects when a network error is encountered (which is usually when there's a permisissions issue or similar). A fetch() promise does not reject on HTTP errors (404,etc). instead, a then() handler must check the response.ok and or response.status properties.
+
+apane promise se request ki apako response code mila 404 ye apako resolve me milega ya reject me milega 
+ans :- on apako hamesha as a response hi milega resolve me error tab milega jab aap request kar hi nahi paya hai browser
